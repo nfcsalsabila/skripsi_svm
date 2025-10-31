@@ -1,0 +1,21 @@
+digraph SVM_Architecture {
+	bgcolor=white rankdir=LR splines=spline
+	node [fontname="Helvetica-Bold" shape=ellipse style=filled]
+	A [label="Input Data
+(Fitur dari Dataset)" fillcolor="#A8E6CF"]
+	B [label="Feature Extraction
+(Pemilihan fitur penting)" fillcolor="#DCEDC1"]
+	C [label="Normalization
+(Standarisasi data)" fillcolor="#FFD3B6"]
+	D [label="Kernel Transformation
+(Linear / RBF / Polynomial)" fillcolor="#FFAAA5"]
+	E [label="Hyperplane Separation
+(Mencari batas pemisah optimal)" fillcolor="#FF8B94"]
+	F [label="Output
+(Hasil Klasifikasi)" fillcolor="#DCE775"]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+}

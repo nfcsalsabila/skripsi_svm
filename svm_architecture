@@ -1,0 +1,10 @@
+// Arsitektur Model SVM
+digraph {
+	A [label="Input Data (Fitur)"]
+	B [label="Kernel Function (Linear / RBF / Polynomial)"]
+	C [label="Hyperplane (Decision Boundary)"]
+	D [label="Output Kelas"]
+	A -> B
+	B -> C
+	C -> D
+}
